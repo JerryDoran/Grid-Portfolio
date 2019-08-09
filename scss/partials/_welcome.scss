@@ -1,0 +1,44 @@
+.welcome {
+  background: url(/img/header-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: $dark-blue;
+    line-height: 2;
+    text-align: center;
+
+    span {
+      @include sans-serif(
+        $font-size: 5.5rem,
+        $color: $accent,
+        $font-family: $secondary-font
+      );
+      display: block;
+    }
+
+    &::before {
+      content: '';
+      width: 60%;
+      height: 1px;
+      background: $dark-blue;
+      display: block;
+      margin: 0 auto 2rem;
+    }
+
+    &::after {
+      content: '';
+      width: 60%;
+      height: 1px;
+      background: $dark-blue;
+      display: block;
+      margin: 2.8rem auto 2rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Six Caps', sans-serif;
+
+@mixin sans-serif(
+  $font-size,
+  $text-indent: 0.2em,
+  $font-family: $primary-font,
+  $letter-spacing: 0.15em,
+  $color: $dark-gray,
+  $text-transform: uppercase,
+  $line-height: 1
+) {
+  font-size: $font-size;
+  text-indent: $text-indent;
+  letter-spacing: $letter-spacing;
+  color: $color;
+  text-transform: $text-transform;
+  line-height: $line-height;
+  font-family: $font-family;
+}
