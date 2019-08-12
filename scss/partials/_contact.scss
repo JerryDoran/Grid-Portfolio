@@ -1,0 +1,45 @@
+.contact {
+  padding: 5rem;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  label {
+    margin-top: 1rem;
+    display: block;
+    color: $dark-gray;
+  }
+
+  input,
+  textarea {
+    box-sizing: border-box;
+    display: block;
+    padding: 0.75rem;
+    width: 100%;
+    background: lighten($light-gray, 6%);
+    border: 1px solid $light-gray;
+    font-size: 1.2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    display: block;
+    width: 30%;
+    margin-top: 1rem;
+    margin-left: auto;
+    background: $accent;
+    border: none;
+    @include sans-serif($font-size: 1.25rem, $color: $white);
+    padding: 0.5rem 0.5rem;
+
+    &:hover {
+      background: darken($accent, 10%);
+    }
+  }
+}

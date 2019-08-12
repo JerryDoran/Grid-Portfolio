@@ -1,7 +1,9 @@
 .about-me {
-  @extend %container;
-  @extend %clearfix;
-  margin-top: 3rem;
+  // @include container($max-width: 20rem);
+  @include container;
+  @include clearfix;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .about-subtitle {
@@ -16,6 +18,7 @@
   }
 }
 
+// THIS IS FOR BROWSER SUPPORT.  IT WILL DISPLAY GRID IF BROWSER SUPPORTS IT
 @supports (display: grid) {
   .about-me {
     display: grid;
