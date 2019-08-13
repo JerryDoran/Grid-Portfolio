@@ -8,6 +8,11 @@
 
 .about-subtitle {
   text-indent: 0;
+  font-family: $secondary-font;
+  font-weight: 500;
+  font-size: 2rem;
+
+  // @include sans-serif($font-family: $secondary-font);
 }
 
 .about-me img {
@@ -28,6 +33,10 @@
   .about-me img {
     grid-column: 1 / span 2;
     grid-row: 1 / 2;
+
+    @include media-query {
+      grid-row: 1 / span 3;
+    }
   }
 
   .about-title {
@@ -38,6 +47,14 @@
 
   .about-subtitle,
   .about-text {
-    grid-column: 1/ -1;
+    grid-column: 1 / -1;
+
+    @include media-query {
+      grid-column: 3 / -1;
+    }
+  }
+
+  .about-subtitle {
+    grid-row: 2 / 3;
   }
 }

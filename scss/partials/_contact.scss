@@ -3,7 +3,7 @@
 
   h1 {
     text-align: center;
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
   }
 
   label {
@@ -26,6 +26,33 @@
   form {
     display: flex;
     flex-direction: column;
+
+    @supports (display: grid) {
+      @include media-query {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          'name email'
+          'message message'
+          '. button';
+
+        .name {
+          grid-area: name;
+        }
+
+        .email {
+          grid-area: email;
+        }
+
+        .message {
+          grid-area: message;
+        }
+
+        .btn {
+          grid-area: button;
+        }
+      }
+    }
   }
 
   .btn {

@@ -1,0 +1,94 @@
+.nav-container {
+  padding: 5px 20px;
+  background: lighten($light-gray, 5%);
+  border-bottom: 2px solid $accent;
+  display: flex;
+  justify-content: space-between;
+
+  .brand-name {
+    color: $dark-gray !important;
+    font-size: 20px;
+  }
+
+  .brand {
+    color: $accent;
+  }
+
+  .nav-button {
+    padding: 1px;
+    display: inline-block;
+    border: 2px solid $accent;
+    align-self: center;
+    transition: all 0.5s ease;
+
+    &:hover {
+      border-color: $dark-gray;
+    }
+
+    &:hover .bar {
+      background: $dark-gray;
+    }
+
+    .bar {
+      width: 20px;
+      height: 2px;
+      margin: 5px;
+      background: $accent;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: $dark-gray;
+      }
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+
+  /* Do not display links */
+  display: none;
+
+  a {
+    /* Elements will span across entire screen */
+    display: block;
+    // background: lighten($light-gray, 5%);
+    padding: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    color: $accent;
+
+    &:hover {
+      // background: $light-gray;
+      color: $dark-gray;
+      padding-left: 20px;
+      background: $light-gray;
+    }
+  }
+}
+
+@include media-query {
+  .nav-container {
+    display: none;
+  }
+
+  nav ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul a {
+    background: transparent;
+  }
+
+  nav ul a:hover {
+    color: $dark-gray;
+  }
+
+  .brand-name {
+    font-size: 30px;
+  }
+}

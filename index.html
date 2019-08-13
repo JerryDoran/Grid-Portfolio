@@ -10,6 +10,23 @@
     <title>Joe Portfolio</title>
   </head>
   <body>
+    <!------------------------------------------ NAVBAR SECTION --------------------------------------------->
+    <nav>
+      <div class="nav-container" id="home">
+        <h1 class="brand-name">Jerry<span class="brand"> Doran</span></h1>
+        <div class="nav-button">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#contact">contact me</a></li>
+      </ul>
+    </nav>
     <!--------------------------------------- WELCOME SECTION --------------------------------------------->
     <div class="welcome">
       <h1>Welcome to my<span> Portfolio</span></h1>
@@ -34,10 +51,10 @@
 
     <!--------------------------------------- ABOUT SECTION --------------------------------------------->
 
-    <section class="about-me">
+    <section class="about-me" id="about">
       <img src="img/joe-portfolio.png" alt="picture of Joe Portfolio" />
       <h1 class="about-title">Joe Portfolio</h1>
-      <h2 class="about-subtitle">Designer and Developer</h2>
+      <h2 class="about-subtitle">Designer & Developer</h2>
       <div class="about-text">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nobis
@@ -56,7 +73,7 @@
 
     <!------------------------------------- PORTFOLIO SECTION --------------------------------------------->
 
-    <section class="portfolio">
+    <section class="portfolio" id="work">
       <h1>My Work</h1>
       <div class="portfolio-items">
         <!-- Portfolio Item 1  -->
@@ -108,7 +125,7 @@
     </section>
 
     <!------------------------------------- CONTACT SECTION --------------------------------------------->
-    <section class="contact">
+    <section class="contact" id="contact">
       <h1>Contact me</h1>
       <form action="">
         <label class="name"
@@ -125,7 +142,7 @@
           >Message
           <textarea name="" id="message" cols="30" rows="10"></textarea>
         </label>
-        <input class="btn" type="submit" value="SEND" />
+        <input class="btn form-btn" type="submit" value="SEND" />
       </form>
     </section>
 
@@ -138,5 +155,12 @@
       </div>
       <p class="copyright">Copyright 2019 Joe Portfolio</p>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

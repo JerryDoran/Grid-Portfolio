@@ -14,6 +14,10 @@
     line-height: 2;
     text-align: center;
 
+    @include media-query {
+      font-size: 2.5vw;
+    }
+
     span {
       @include sans-serif(
         $font-size: 5.5rem,
@@ -21,6 +25,10 @@
         $font-family: $secondary-font
       );
       display: block;
+
+      @include media-query {
+        font-size: 10vw;
+      }
     }
 
     &::before {

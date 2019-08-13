@@ -66,6 +66,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5rem;
+
+    @include media-query {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   .portfolio-item.featured {
