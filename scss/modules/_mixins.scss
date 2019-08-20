@@ -12,7 +12,7 @@
   }
 }
 
-@mixin media-query($width: 50rem) {
+@mixin media-query($width: 800px) {
   @media (min-width: $width) {
     @content;
   }
